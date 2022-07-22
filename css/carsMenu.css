@@ -1,0 +1,55 @@
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+
+.dropbtn-cars {
+  background-color: #4caf4f00;
+  color: rgba(255, 255, 255, 0);
+  padding: 3px;
+  font-size: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-cars {
+  position: fixed;
+  display: inline-block;
+  left: 73%;
+  top: 3%;
+}
+
+.dropdown-content-cars {
+  display: none;
+  left: 33%;
+  position: absolute;
+  background-color: #f9f9f900;
+  min-width: 90px;
+  max-width: 90px;
+  z-index: 1;
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+  animation: fadein 1s;
+}
+
+.dropdown-content-cars a {
+  color: black;
+  text-decoration: none;
+  padding: auto;
+  display: block;
+}
+
+.dropdown-content-cars a:hover {background-color: #f1f1f100}
+
+.dropdown-cars:hover .dropdown-content-cars {
+  display: block;
+}
+
+.dropdown-cars:hover .dropbtn-cars {
+  background-color: #3e8e4100;
+}

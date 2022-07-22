@@ -1,0 +1,54 @@
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.dropbtn-races {
+  background-color: #4caf4f00;
+  color: rgba(255, 255, 255, 0);
+  padding: 3px;
+  font-size: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-races {
+  position: fixed;
+  display: inline-block;
+  left: 16%;
+  top: 3%;
+}
+
+.dropdown-content-races {
+  display: none;
+  left: 30%;
+  position: absolute;
+  background-color: #f9f9f900;
+  min-width: 90px;
+  max-width: 90px;
+  z-index: 1;
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+  animation: fadein 1s;
+}
+
+.dropdown-content-races a {
+  color: black;
+  text-decoration: none;
+  padding: auto;
+  display: block;
+}
+
+.dropdown-content-races a:hover {background-color: #f1f1f100}
+
+.dropdown-races:hover .dropdown-content-races {
+  display: block;
+}
+
+.dropdown-races:hover .dropbtn-races {
+  background-color: #3e8e4100;
+}
