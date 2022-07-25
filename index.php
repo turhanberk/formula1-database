@@ -163,14 +163,14 @@ include "config.php"; // Makes mysql connection
 
 $sql_statement = "SELECT SUM(TABLE_ROWS) 
 FROM INFORMATION_SCHEMA.TABLES 
-WHERE TABLE_SCHEMA = 'formula1_2021'";
+WHERE TABLE_SCHEMA = 'heroku_dff8fbb789a1832'";
 $result = mysqli_query($db, $sql_statement); // Executing query
 $row = mysqli_fetch_assoc($result);// Iterating the result
 $totalRow = $row['SUM(TABLE_ROWS)']; 
 
 $sql_statement = "SELECT COUNT(*)
 FROM information_schema.tables
-WHERE table_schema = 'formula1_2021';";
+WHERE table_schema = 'heroku_dff8fbb789a1832';";
 
 $result = mysqli_query($db, $sql_statement); // Executing query
 
