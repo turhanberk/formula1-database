@@ -76,7 +76,15 @@ div {
 	left:78%; 
   z-index: 10;
 } 
+@font-face {
+    font-family: "Formula1-Display-Bold";
+    src: url("../fonts/Formula1-Bold.woff") format("woff");
+    }
 
+    @font-face {
+    font-family: "Formula1-Display-Regular";
+    src: url("../fonts/Formula1-Regular.woff") format("woff");
+    }
 </style>
 
 

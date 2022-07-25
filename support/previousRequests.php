@@ -6,6 +6,15 @@
 <style>
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(https://fonts.googleapis.com/css?family=Orbitron:700);
+@font-face {
+    font-family: "Formula1-Display-Bold";
+    src: url("../fonts/Formula1-Bold.woff") format("woff");
+    }
+
+    @font-face {
+    font-family: "Formula1-Display-Regular";
+    src: url("../fonts/Formula1-Regular.woff") format("woff");
+    }
 </style>
 </head>
 <body>

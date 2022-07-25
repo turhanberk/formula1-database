@@ -68,6 +68,15 @@
 <style>
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(https://fonts.googleapis.com/css?family=Orbitron:700);
+@font-face {
+    font-family: "Formula1-Display-Bold";
+    src: url("../fonts/Formula1-Bold.woff") format("woff");
+    }
+
+    @font-face {
+    font-family: "Formula1-Display-Regular";
+    src: url("../fonts/Formula1-Regular.woff") format("woff");
+    }
 </style>
 <div class="menu">
 <div class="back" onclick="window.location.href = 'previousRequests.php'"><i class="fa fa-chevron-left"></i> <img src="https://static.wixstatic.com/media/4a491b_4a34f254858244f1919cb072bc89aba6~mv2.jpg/v1/fill/w_1723,h_1723,al_c,q_85/4a491b_4a34f254858244f1919cb072bc89aba6~mv2.jpg" draggable="false"/></div>

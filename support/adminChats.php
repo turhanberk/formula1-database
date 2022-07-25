@@ -67,6 +67,15 @@
 <style>
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(https://fonts.googleapis.com/css?family=Orbitron:700);
+@font-face {
+    font-family: "Formula1-Display-Bold";
+    src: url("../fonts/Formula1-Bold.woff") format("woff");
+    }
+
+    @font-face {
+    font-family: "Formula1-Display-Regular";
+    src: url("../fonts/Formula1-Regular.woff") format("woff");
+    }
 </style>
 <div class="menu">
 <div class="back" onclick="window.location.href = 'adminPage.php'"><i class="fa fa-chevron-left"></i> <img src="https://imgresizer.eurosport.com/unsafe/1200x1200/smart/filters:format(jpeg)/origin-imgresizer.eurosport.com/2016/09/08/1928257-40560625-2560-1440.jpg" draggable="false"/></div>
