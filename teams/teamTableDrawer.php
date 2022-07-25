@@ -81,7 +81,7 @@ tr:nth-child(odd) {
 <table>
 
 <thead> 
-<tr> <th> TEAM NAME </th> <th> TEAM POINT </th> <th>CHAMPIONSHIPS</th> <th>FOUNDING YEAR</th> <th style="width:5%">DELETE</th> </tr> 
+<tr> <th> TEAM NAME </th> <th> TEAM POINT </th> <th>CHAMPIONSHIPS</th> <th>FOUNDING YEAR</th> <th style="width:5.6%">DELETE</th> </tr> 
 </thead>
 <tbody>
 <?php

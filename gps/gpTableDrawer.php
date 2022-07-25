@@ -15,8 +15,8 @@
 table {
     display: flex;
     flex-flow: column;
-    height: 100%;
-    width: 100%;
+    height: 115%;
+    width: 102%;
     font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif; 
     background-color:rgb(178, 178, 178,0);
     border-collapse: collapse;
@@ -25,7 +25,7 @@ table thead {
     /* head takes the height it requires, 
     and it's not scaled when table is resized */
     flex: 0 0 auto;
-    width: calc(100% - 0.2em);
+    width: calc(100% + 0.1em);
 
 }
 table tbody {
@@ -36,7 +36,7 @@ table tbody {
 
 }
 table tbody tr {
-    left:100px;
+    left: 100px;
     width: 100%;
 }
 
@@ -82,7 +82,7 @@ tr:nth-child(odd) {
 <table>
 
 <thead> 
-<tr> <th> GP NAME </th> <th> CIRCUIT NAME </th> <th> WINNER </th> <th> WEATHER </th> <th> FASTEST LAP </th> <th style="width:5%">DELETE</th> </tr> 
+<tr> <th> GP NAME </th> <th> CIRCUIT NAME </th> <th> WINNER </th> <th> WEATHER </th> <th> FASTEST LAP </th> <th style="width:5.7%">DELETE</th> </tr> 
 </thead>
 <tbody>
 <?php
@@ -101,7 +101,7 @@ while($row = mysqli_fetch_assoc($result))
   $weather = $row['weather'];
   $fastestLap = $row['fastestLap'];
 
-	echo "<tr>" . "<td>" . $gpName . "</td>" . "<td>" . $circuitName . "</td>" . "<td>" . $winner . "</td>" . "<td>" . $weather . "</td>" . "<td>" . $fastestLap . "</td>" ."<td style='width: 4.5em'>" . '<form action="gpDelete.php" method="POST"> <button name="gpName" value="'.$gpName.'">DELETE</button>  </form>' . "</td>" ."</tr>";
+	echo "<tr>" . "<td>" . $gpName . "</td>" . "<td>" . $circuitName . "</td>" . "<td>" . $winner . "</td>" . "<td>" . $weather . "</td>" . "<td>" . $fastestLap . "</td>" ."<td style='width: 4.8em'>" . '<form action="gpDelete.php" method="POST"> <button name="gpName" value="'.$gpName.'">DELETE</button>  </form>' . "</td>" ."</tr>";
 }
 
 ?>

@@ -15,8 +15,8 @@
 table {
     display: flex;
     flex-flow: column;
-    height: 100%;
-    width: 100%;
+    height: 125%;
+    width: 101%;
     font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif; 
     background-color:rgb(178, 178, 178,0);
     border-collapse: collapse;
@@ -25,7 +25,7 @@ table thead {
     /* head takes the height it requires, 
     and it's not scaled when table is resized */
     flex: 0 0 auto;
-    width: calc(100% - 0.2em);
+    width: calc(100% + 0.1em);
 
 }
 table tbody {
@@ -36,7 +36,7 @@ table tbody {
 
 }
 table tbody tr {
-    left:100px;
+    left: 100px;
     width: 100%;
 }
 
@@ -72,6 +72,12 @@ tr:nth-child(odd) {
     src: url("../fonts/Formula1-Regular.woff") format("woff");
     }
 
+    * { 
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
 </style>
 
 </head>
@@ -82,7 +88,7 @@ tr:nth-child(odd) {
 <table>
 
 <thead> 
-<tr> <th> CAR ID </th> <th> CAR ENGINE </th> <th>CHASSIS LENGTH</th> <th> BODY COLOR</th> <th style="width:5%">DELETE</th> </tr> 
+<tr> <th> CAR ID </th> <th> CAR ENGINE </th> <th>CHASSIS LENGTH</th> <th> BODY COLOR</th> <th style="width:5.9%">DELETE</th> </tr> 
 </thead>
 <tbody>
 <?php
@@ -100,7 +106,7 @@ while($row = mysqli_fetch_assoc($result))
   $carlength =  $row['carlength'];
   $color = $row['color'];
 
-	echo "<tr>" . "<td>" . $carID . "</td>" . "<td>" . $carengine . "</td>" . "<td>" . $carlength . "</td>" . "<td>" . $color . "</td>" ."<td style='width: 4.5em'>" . '<form action="carDelete.php" method="POST"> <button name="carID" value="'.$carID.'">DELETE</button> </form>' . "</td>" ."</tr>";
+	echo "<tr>" . "<td>" . $carID . "</td>" . "<td>" . $carengine . "</td>" . "<td>" . $carlength . "</td>" . "<td>" . $color . "</td>" ."<td style='width: 5em;'>" . '<form action="carDelete.php" method="POST"> <button name="carID" style = "margin-left:3px;" value="'.$carID.'">DELETE</button> </form>' . "</td>" ."</tr>";
 }
 
 ?>

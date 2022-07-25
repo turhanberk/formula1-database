@@ -15,7 +15,7 @@
 table {
     display: flex;
     flex-flow: column;
-    height: 100%;
+    height: 115%;
     width: 100%;
     font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif; 
     background-color:rgb(178, 178, 178,0);
@@ -82,7 +82,7 @@ tr:nth-child(odd) {
 <table>
 
 <thead> 
-<tr> <th> DRIVER NUMBER </th> <th> GP NAME </th> <th>POSITION</th> <th style="width:5%">DELETE</th> </tr> 
+<tr> <th> DRIVER NUMBER </th> <th> GP NAME </th> <th>POSITION</th> <th style="width:5.5%">DELETE</th> </tr> 
 </thead>
 <tbody>
 <?php

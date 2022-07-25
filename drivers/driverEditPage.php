@@ -9,12 +9,13 @@
   display: flex;
   flex-flow: row wrap;
   align-items: center;
+  margin-top: 6%;
 }
 
 .form-inline input {
   vertical-align: middle;
-  margin: 10px 15px 10px 13px;
-  width: 108px;
+  margin: 10px 15px 10px 20px;
+  width: 130px;
   padding: 10px 10px;
   background-color: #fff;
   border: 4px solid #ddd;

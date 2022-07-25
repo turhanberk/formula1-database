@@ -9,7 +9,7 @@
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  margin-top:3%;
+  margin-top:1%;
 }
 
 .form-inline input {
@@ -28,6 +28,7 @@
   padding: 10px 10px;
   background-color: #fff;
   border: 4px solid #ddd;
+  -webkit-appearance: none;
 }
 
 .form-inline button {
@@ -89,7 +90,7 @@ div {
 table {
     display: flex;
     flex-flow: column;
-    height: 100%;
+    height: 120%;
     width: 95%;
     font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif; 
     background-color:rgb(178, 178, 178,0);

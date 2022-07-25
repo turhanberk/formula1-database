@@ -6,6 +6,8 @@
 <style>
 
 .form-inline {  
+  margin-top: 4%;
+  margin-left:1%;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -14,7 +16,7 @@
 .form-inline input {
   vertical-align: middle;
   margin: 10px 30px 10px 40px;
-  width: 150px;
+  width: 180px;
   padding: 10px 10px;
   background-color: #fff;
   border: 4px solid #ddd;
@@ -23,10 +25,11 @@
 .form-inline select{
   vertical-align: middle;
   margin: 10px 20px 10px 50px;
-  width: 150px;
+  width: 180px;
   padding: 10px 10px;
   background-color: #fff;
   border: 4px solid #ddd;
+  -webkit-appearance: none;
 }
 
 .form-inline button {
@@ -85,6 +88,13 @@ div {
     font-family: "Formula1-Display-Regular";
     src: url("../fonts/Formula1-Regular.woff") format("woff");
     }
+    
+* { 
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
 </style>
 
 

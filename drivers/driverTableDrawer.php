@@ -15,8 +15,8 @@
 table {
     display: flex;
     flex-flow: column;
-    height: 100%;
-    width: 100%;
+    height: 125%;
+    width: 102%;
     font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif; 
     background-color:rgb(178, 178, 178,0);
     border-collapse: collapse;
@@ -25,7 +25,7 @@ table thead {
     /* head takes the height it requires, 
     and it's not scaled when table is resized */
     flex: 0 0 auto;
-    width: calc(100% - 0.2em);
+    width: calc(100% + 0em);
 
 }
 table tbody {
@@ -36,7 +36,7 @@ table tbody {
 
 }
 table tbody tr {
-    left:100px;
+    left: 100px;
     width: 100%;
 }
 
@@ -70,7 +70,11 @@ tr:nth-child(odd) {
     font-family: "Formula1-Display-Regular";
     src: url("../fonts/Formula1-Regular.woff") format("woff");
     }
-
+    * { 
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
 </style>
 
 </head>
@@ -81,7 +85,7 @@ tr:nth-child(odd) {
 <table>
 
 <thead> 
-<tr> <th> DRIVER NUMBER </th> <th> DRIVER NAME </th> <th>TEAM NAME</th> <th>POINTS</th> <th>PODIUMS</th> <th>CHAMPIONSHIPS</th> <th>SEASONS</th> <th>CAR ID</th>   <th style="width:5%">DELETE</th> </tr> 
+<tr> <th> DRIVER NUMBER </th> <th> DRIVER NAME </th> <th>TEAM NAME</th> <th>POINTS</th> <th>PODIUMS</th> <th>CHAMPIONSHIPS</th> <th>SEASONS</th> <th>CAR ID</th>   <th style="width:5.7%">DELETE</th> </tr> 
 </thead>
 <tbody>
 <?php
@@ -103,7 +107,7 @@ while($row = mysqli_fetch_assoc($result))
   $seasons = $row['seasons'];
   $teamName = $row['teamName'];
 
-	echo "<tr>" . "<td>" . $driverNumber . "</td>" . "<td>" . $driverName . "</td>" . "<td>" . $teamName . "</td>" . "<td>" . $points . "</td>" . "<td>" . $podiums . "</td>" ."<td>" . $championships . "</td>" ."<td>" . $seasons . "</td>" ."<td>" . $carID . "</td>" ."<td style='width: 4.5em'>" . '<form action="driverDelete.php" method="POST"> <button name="driverNumber" value="'.$driverNumber.'">DELETE</button>  </form>' . "</td>" ."</tr>";
+	echo "<tr>" . "<td>" . $driverNumber . "</td>" . "<td>" . $driverName . "</td>" . "<td>" . $teamName . "</td>" . "<td>" . $points . "</td>" . "<td>" . $podiums . "</td>" ."<td>" . $championships . "</td>" ."<td>" . $seasons . "</td>" ."<td>" . $carID . "</td>" ."<td style='width: 4.8em'>" . '<form action="driverDelete.php" method="POST"> <button name="driverNumber" value="'.$driverNumber.'">DELETE</button>  </form>' . "</td>" ."</tr>";
 }
 
 ?>

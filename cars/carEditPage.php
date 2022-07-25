@@ -9,6 +9,7 @@
   display: flex;
   flex-flow: row wrap;
   align-items: center;
+  margin-top:6.5%;
 }
 
 .form-inline input {
@@ -27,6 +28,7 @@
   padding: 10px 10px;
   background-color: #fff;
   border: 4px solid #ddd;
+  -webkit-appearance: none;
 }
 
 .form-inline button {
@@ -87,6 +89,12 @@ div {
     font-family: "Formula1-Display-Regular";
     src: url("../fonts/Formula1-Regular.woff") format("woff");
     }
+
+    * { 
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
 
 </style>
 
